@@ -1,12 +1,12 @@
-title: 谖之茶寮
-email: tiumoyang@outlook.com
-description: 自我控制是最强者的本能。
+title: "谖之茶寮"
+email: "tiumoyang@outlook.com"
+description: "自我控制是最强者的本能。"
 baseurl: "https://yangxuanzhi.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yangxuanzhi
 
 # Build settings
-theme: jekyll-architect-theme
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
