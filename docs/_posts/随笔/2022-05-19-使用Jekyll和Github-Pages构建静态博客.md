@@ -41,5 +41,3 @@ tags: [博客]
 - Jekyll：[欢迎 - Jekyll • 简单静态博客网站生成器 (jekyllcn.com)](http://jekyllcn.com/docs/home/)
 - Github Pages：[GitHub Pages 文档 - GitHub Docs](https://docs.github.com/cn/pages)
 - 给你 Github Pages 加上评论功能：[Beaudar - 表达 (lipk.org)](https://beaudar.lipk.org/)
-
-![](https://ym-tuchuang.oss-cn-hangzhou.aliyuncs.com/20220519152401.png)
