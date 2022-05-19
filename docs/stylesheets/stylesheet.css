@@ -99,6 +99,10 @@ a:hover {
   outline: 0;
 }
 
+h1 > a {
+  text-decoration: none;
+}
+
 /* Text-level semantics
    ========================================================================== */
 
