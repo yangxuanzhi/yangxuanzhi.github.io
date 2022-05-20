@@ -1,0 +1,31 @@
+---
+layout: default
+title: 分类
+---
+
+<div class="container">
+  <h2>分类列表</h2>
+  <div class="panel-group" id="accordion">
+    {% for cat in site.categories %}
+      <div class="panel  panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            {{ cat | first }}&nbsp;
+            <a class="text-muted" style="font-size: 10px;" data-toggle="collapse" data-parent="#accordion" href="#{{ cat | first }}">
+              展开
+            </a>
+          </h4>
+        </div>
+        <div id="{{ cat | first }}" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul>
+              {% for post in cat[1] %}
+                <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

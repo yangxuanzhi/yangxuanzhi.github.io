@@ -1,13 +1,13 @@
 title: "谖之文寮"
 email: "tiumoyang@outlook.com"
 description: "Self control is the strongest instinct."
-baseurl: "https://blog.yangxuanzhi.wang" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.yangxuanzhi.wang" # the base hostname & protocol for your site, e.g. http://example.com
+locale: "zh"
 github_username:  yangxuanzhi
 markdown: kramdown
 
 # Build settings
-theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
   
