@@ -4,11 +4,13 @@ description: "Self control is the strongest instinct."
 baseurl: "https://blog.yangxuanzhi.wang" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yangxuanzhi
+markdown: kramdown
 
 # Build settings
 theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.
