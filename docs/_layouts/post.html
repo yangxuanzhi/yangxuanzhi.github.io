@@ -1,8 +1,14 @@
 ---
 layout: default
 ---
+<style>
+    #main_container {
+        background: rgba(255,255,255,0.95);
+    }
+</style>
 <div class="row">
-    <div class="col">
+    <div class="col-md-1"></div>
+    <div class="col-md-11 text-left">
         <div class="page-header">
             <h1>{{ page.title }}
                 <small>{{ page.date | date_to_string }}</small>
@@ -10,12 +16,17 @@ layout: default
         </div>
     </div>
 </div>
-
-{{ content }}
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        {{ content }}
+    </div>
+    <div class="col-md-1"></div>
+</div>
 
 <hr/>
 <div class="row">
-    <div class="col">
+    <div class="col-md-12 text-center">
         <script src="https://beaudar.lipk.org/client.js"
         repo="yangxuanzhi/yangxuanzhi.github.io"
         branch="main"
