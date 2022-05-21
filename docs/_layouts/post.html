@@ -1,23 +1,28 @@
 ---
 layout: default
 ---
-<div class="container page-header">
-        <h1>{{ page.title }}
+<div class="row">
+    <div class="col">
+        <div class="page-header">
+            <h1>{{ page.title }}
                 <small>{{ page.date | date_to_string }}</small>
-        </h1>
-</div>
-<div class="container">
-    {{ content }}
+            </h1>
+        </div>
+    </div>
 </div>
 
+{{ content }}
+
 <hr/>
-<div class="container">
-    <script src="https://beaudar.lipk.org/client.js"
-    repo="yangxuanzhi/yangxuanzhi.github.io"
-    branch="main"
-    issue-term="pathname"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
-    </script>
+<div class="row">
+    <div class="col">
+        <script src="https://beaudar.lipk.org/client.js"
+        repo="yangxuanzhi/yangxuanzhi.github.io"
+        branch="main"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    </div>
 </div>

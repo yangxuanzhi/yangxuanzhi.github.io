@@ -15,28 +15,81 @@
         });
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <style>
+      body {
+        background-image: url('https://tenapi.cn/acg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      #main_container {
+        background: rgba(255,255,255,0.7);
+        position: fixed;
+        left: 20%;
+        right: 20%;
+        height: 100%;
+        overflow-y: scroll;
+        width: auto;
+      }
+      a {
+        color: #0078e7;
+      }
+      .site-title {
+        font-weight: bold;
+        color: #242424;
+      }
+      .panel {
+        background: rgba(255,255,255,0.6);
+      }
+      .post-title, .panel-title {
+        font-family: 微软雅黑, 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+      }
+      .panel-title {
+        color: black;
+      }
+      .panel-footer {
+        background: rgba(255, 255, 255, 0.8);
+      }
+    </style>
     <title> 谖之文寮-{{ page.title }} </title>
   </head>
 
   <body>
-    <div class="container">
-      <header class="container">
-        <a href="{{ site.url }}{{ site.baseurl }}" class="row justify-content-center text-decoration-none">
-          <h1 class="col text-center"> {{ site.title }} </h1>
-        </a>
+    <div id="main_container" class="container">
+      <header>
         <div class="row">
-          <p class="col text-center" id="hitokoto"></p>
+          <div class="col-md-12  text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}">
+              <h1 class="site-title"> {{ site.title }} </h1>
+            </a>
+          </div>
         </div>
-        <div class="row text-center" style="font-size: 18px;">
-          <a href="{{ site.url }}{{ site.baseurl }}" class="col">主页</a>
-          <a href="{{ site.url }}{{ site.baseurl }}\categories.html" class="col">分类</a>
-          <a href="{{ site.url }}{{ site.baseurl }}\tags.html" class="col">标签</a>
-          <a href="{{ site.url }}{{ site.baseurl }}\messages.html" class="col">留言板</a>
-          <a href="{{ site.url }}{{ site.baseurl }}\about.html" class="col">关于我</a>
+        <div class="row">
+          <div class="col-md-12  text-center">
+            <p id="hitokoto"></p>
+          </div>
+        </div>
+        <div class="row" style="font-size: 18px;">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}">主页</a>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}\categories.html">分类</a>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}\tags.html">标签</a>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}\messages.html">留言板</a>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="{{ site.url }}{{ site.baseurl }}\about.html">关于我</a>
+          </div>
+          <div class="col-md-1"></div>
         </div>
         <hr>
       </header>
-      <main class="container">
+      <main>
         {{ content }}
       </main>
     </div>
