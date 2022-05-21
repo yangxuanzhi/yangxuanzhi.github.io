@@ -4,13 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script>
-      window.CONFIG = {
-        "fireworks":{
-          "colors":["102, 167, 221","62, 131, 225","33, 78, 194"]
-        }
-      };
-    </script>
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/x-mathjax-config">
@@ -73,6 +66,7 @@
         </div>
         <div class="row">
           <div class="col-md-12  text-center">
+            <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
             <p id="hitokoto"></p>
           </div>
         </div>
@@ -102,16 +96,4 @@
       </main>
     </div>
   </body>
-  <script>
-    var xhr = new XMLHttpRequest();
-    xhr.open('get', 'https://v1.hitokoto.cn');
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        var data = JSON.parse(xhr.responseText);
-        var hitokoto = document.getElementById('hitokoto');
-        hitokoto.innerText = data.hitokoto+" ——《"+data.from+"》";
-      }
-    }
-    xhr.send();
-  </script>
 </html>
