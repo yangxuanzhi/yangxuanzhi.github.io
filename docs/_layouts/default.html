@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/dmaku.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script>
+      window.CONFIG = {
+        "fireworks":{
+          "colors":["102, 167, 221","62, 131, 225","33, 78, 194"]
+        }
+      };
+    </script>
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/x-mathjax-config">
@@ -94,7 +103,9 @@
         {{ content }}
       </main>
     </div>
+    <canvas id="c" width="547" height="714"></canvas>
   </body>
+  <script type="text/javascript" src="js/dmaku.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
     xhr.open('get', 'https://v1.hitokoto.cn');
